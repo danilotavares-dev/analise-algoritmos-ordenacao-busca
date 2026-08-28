@@ -1,10 +1,9 @@
 # Atividade Avaliativa — Estruturas de Dados
 
-**Curso:** Engenharia de Software — Centro Universitário do Distrito Federal (UDF)
-**Disciplina:** Estruturas de Dados
-**Autores:** Danilo Tavares Lima e Pedro Artur
-**Ano:** 2026
-**Valor da atividade:** 1,0 ponto
+**Curso:** Engenharia de Software — Centro Universitário do Distrito Federal (UDF) </br>
+**Disciplina:** Estruturas de Dados </br>
+**Autores:** Danilo Tavares Lima e Pedro Artur </br>
+**Ano:** 2026 </br>
 
 ## Objetivo
 
