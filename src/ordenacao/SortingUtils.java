@@ -1,3 +1,5 @@
+package ordenacao;
+
 public class SortingUtils {
 
     static int comparacoes = 0;

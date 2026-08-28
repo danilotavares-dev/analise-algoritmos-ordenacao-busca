@@ -1,72 +1,90 @@
-# Sorting & Searching Algorithms — Complexity Analysis
+# Atividade Avaliativa — Estruturas de Dados
 
-Experimental analysis of **Bubble Sort**, **Quick Sort**, and **sequential matrix search** in Java, comparing theoretical time complexity (O(n²), O(n log n), O(m×n)) against measured comparisons and swaps across varying input sizes.
+**Curso:** Engenharia de Software — Centro Universitário do Distrito Federal (UDF)
+**Disciplina:** Estruturas de Dados
+**Autores:** Danilo Tavares Lima e Pedro Artur
+**Ano:** 2026
+**Valor da atividade:** 1,0 ponto
 
-This project was developed as part of the Data Structures course (Estruturas de Dados) at Centro Universitário do Distrito Federal (UDF), and expanded here with a portfolio-oriented focus on experimental performance measurement rather than just algorithm implementation.
+## Objetivo
 
-## Overview
+Investigar experimentalmente o comportamento de estruturas de dados e algoritmos fundamentais, relacionando **arrays, matrizes, ordenação, busca, índices, loops e complexidade computacional**. Além de desenvolver os códigos, a atividade exige **medir, comparar e interpretar** a quantidade de operações realizadas pelos algoritmos, evidenciando que resultados iguais podem esconder custos computacionais muito diferentes.
 
-Most tutorials stop at "here's how Bubble Sort works." This project goes further: it **instruments** each algorithm to count comparisons and swaps in real time, then runs controlled experiments across multiple input sizes to observe how theoretical complexity plays out in practice.
+## Estrutura do repositório
 
-## What's inside
-
-| Module | Description |
-|---|---|
-| `SortingUtils.java` | Bubble Sort and Quick Sort implementations with built-in operation counters (comparisons and swaps) |
-| `Main.java` | Runs sorting experiments across array sizes of 10, 20, and 1,000 elements, using identical input data for a fair comparison between algorithms |
-| `BuscaSequencial.java` | Sequential search in a 2D matrix, counting comparisons and reporting the position (row/column) where a value is found |
-| `HandsOn1.java` | Array investigation: reads 10 temperatures, computes average, max/min values and their indices, and counts array traversal operations |
-| `HandsOn2.java` | 2D matrix applied to sensor monitoring: 5 sensors × 24 hourly readings, computing per-sensor and overall averages, peak temperature and its location, and threshold-based counting |
-
-## Key results
-
-Running both sorting algorithms on identical randomly generated arrays (fixed seed for reproducibility):
-
-| Size | Bubble Sort — Comparisons | Bubble Sort — Swaps | Quick Sort — Comparisons | Quick Sort — Swaps |
-|---|---|---|---|---|
-| 10 | 45 | 19 | 36 | 10 |
-| 20 | 190 | 95 | 120 | 27 |
-| 1,000 | 499,500 | 253,113 | 13,466 | 2,690 |
-
-At 1,000 elements, Bubble Sort performs **~47x more operations** than Quick Sort to produce the exact same sorted output — a concrete illustration of why O(n²) vs O(n log n) matters in practice, not just in theory.
-
-Sequential search in matrices follows the expected O(m × n) pattern: a 100×100 matrix (10,000 elements) requires up to 10,000 comparisons in the worst case (value at the end, or value not present), while a value found at the first position takes just 1 comparison, regardless of matrix size.
-
-## How to run
-
-Each file is a standalone `public class` with its own `main` method. Compile and run individually:
-
-```bash
-javac SortingUtils.java Main.java
-java Main
+```
+project-root/
+├── README.md                                  ← este arquivo
+├── docs/
+│   ├── 01-pesquisa-bubble-quick.md             ← Parte 1: pesquisa e comparação teórica
+│   ├── 02-experimento-ordenacao.md             ← Parte 2: experimento Bubble vs Quick Sort
+│   ├── 03-busca-matrizes.md                    ← Parte 3: busca sequencial em matrizes
+│   ├── 04-handson1-array-temperaturas.md       ← Parte 4: Hands On 1 (array de temperaturas)
+│   ├── 05-handson2-matriz-sensores.md          ← Parte 5: Hands On 2 (matriz de sensores)
+│   └── 06-analise-conclusao.md                 ← Parte 6: análise crítica e conclusão
+└── src/
+    ├── ordenacao/
+    │   ├── SortingUtils.java                   ← package ordenacao;
+    │   └── Main.java                           ← package ordenacao;
+    ├── busca/
+    │   └── BuscaSequencial.java                ← package busca;
+    ├── handson1/
+    │   └── HandsOn1.java                       ← package handson1;
+    └── handson2/
+        └── HandsOn2.java                       ← package handson2;
 ```
 
+## Sumário da entrega
+
+| Parte | Conteúdo | Peso |
+|---|---|---|
+| [Parte 1](docs/01-pesquisa-bubble-quick.md) | Pesquisa e comparação entre Bubble Sort e Quick Sort | 0,20 |
+| [Parte 2](docs/02-experimento-ordenacao.md) | Experimento de ordenação com arrays de 10, 20 e 1.000 elementos | 0,25 |
+| [Parte 3](docs/03-busca-matrizes.md) | Busca sequencial em matrizes 2×2, 10×10 e 100×100 | 0,20 |
+| [Parte 4](docs/04-handson1-array-temperaturas.md) | Hands On 1 — Investigação do array de temperaturas | 0,15 |
+| [Parte 5](docs/05-handson2-matriz-sensores.md) | Hands On 2 — Matriz aplicada a sensores | 0,15 |
+| [Parte 6](docs/06-analise-conclusao.md) | Análise crítica e conclusão geral | 0,05 |
+| **Total** | | **1,00** |
+
+## Como executar os códigos
+
+Todos os programas foram desenvolvidos em **Java** e organizados em **pacotes** (uma pasta por parte). Por isso, a compilação e execução precisam ser feitas informando o pacote — não basta rodar `javac Arquivo.java` direto dentro da pasta.
+
+A partir da **raiz do projeto**, rode:
+
+**Ordenação (Parte 2):**
 ```bash
-javac BuscaSequencial.java
-java BuscaSequencial
+javac -d out src/ordenacao/*.java
+java -cp out ordenacao.Main
 ```
 
+**Busca em matrizes (Parte 3):**
 ```bash
-javac HandsOn1.java
-java HandsOn1
+javac -d out src/busca/*.java
+java -cp out busca.BuscaSequencial
 ```
+*(informe linhas, colunas e o valor buscado quando solicitado no terminal)*
 
+**Hands On 1 (Parte 4):**
 ```bash
-javac HandsOn2.java
-java HandsOn2
+javac -d out src/handson1/*.java
+java -cp out handson1.HandsOn1
 ```
+*(informe as 10 temperaturas solicitadas)*
 
-`BuscaSequencial`, `HandsOn1`, and `HandsOn2` prompt for input via the terminal (matrix dimensions, values to search, temperatures, etc).
+**Hands On 2 (Parte 5):**
+```bash
+javac -d out src/handson2/*.java
+java -cp out handson2.HandsOn2
+```
+*(informe o limite de temperatura desejado)*
 
-## Design notes
+> `-d out` diz ao Java para colocar os arquivos compilados (`.class`) dentro de uma pasta chamada `out`, respeitando a estrutura de pacotes. `-cp out` diz para procurar essas classes dentro dessa pasta na hora de rodar. Se estiver usando o IntelliJ, basta clicar no botão ▶️ ao lado da classe desejada — a IDE já faz tudo isso por trás.
 
-- **Fixed random seeds** (`new Random(51)`) are used throughout to make results reproducible across runs — important for experimental comparison, same idea as `random_state` in scikit-learn.
-- **Static counters** in `SortingUtils` accumulate comparisons/swaps across recursive `quickSort` calls, reset via `resetCounters()` before each run.
-- **Identical input copies** (`Arrays.copyOf`) are used for both algorithms in each experiment, since both `bubbleSort` and `quickSort` mutate arrays in place — without this, the second algorithm would sort already-sorted data.
-## What this project demonstrates
+## Ideia central da atividade
 
-Two algorithms can produce the exact same output and still perform wildly different amounts of work to get there. Comparing only final results hides this entirely — you need to measure the operations themselves to understand real-world efficiency, which is the core idea this project sets out to explore across both 1D (arrays) and 2D (matrices) data structures.
+> Dois algoritmos podem produzir exatamente o mesmo resultado e, ainda assim, realizar quantidades completamente diferentes de operações.
 
-## Author
+Por isso, em todos os experimentos deste repositório, buscou-se relacionar:
 
-Danilo Tavares Lima — Software Engineering student at UDF, Brasília.
+**Tamanho da entrada → Número de operações → Complexidade → Eficiência do algoritmo.**

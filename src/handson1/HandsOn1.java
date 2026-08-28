@@ -1,3 +1,5 @@
+package handson1;
+
 import java.util.Scanner;
 
 public class HandsOn1 {
