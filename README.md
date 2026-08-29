@@ -9,6 +9,8 @@
 
 Investigar experimentalmente o comportamento de estruturas de dados e algoritmos fundamentais, relacionando **arrays, matrizes, ordenação, busca, índices, loops e complexidade computacional**. Além de desenvolver os códigos, a atividade exige **medir, comparar e interpretar** a quantidade de operações realizadas pelos algoritmos, evidenciando que resultados iguais podem esconder custos computacionais muito diferentes.
 
+🎥 **Demonstração Completa:** [Baixar vídeo da execução de todos os algoritmos (17 MB)](https://github.com/danilotavares-dev/analise-algoritmos-ordenacao-busca/releases/download/v1.0.0/registro-atividade-estrutura-dados-2.mkv)
+
 ## Estrutura do repositório
 
 ```
