@@ -1,4 +1,4 @@
-# Atividade Avaliativa — Estruturas de Dados 2
+# Atividade Avaliativa — Estruturas de Dados
 
 **Curso:** Engenharia de Software — Centro Universitário do Distrito Federal (UDF) </br>
 **Disciplina:** Estruturas de Dados </br>
