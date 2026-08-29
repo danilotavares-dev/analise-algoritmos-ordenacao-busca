@@ -69,22 +69,10 @@ public class handson1.HandsOn1 {
 }
 ```
 
-## Resultado de exemplo
+## Execução do programa
 
-Entrada: `1, 5, 7, 5, 8, 2, 1, 25, 0, 5`
+![Saída do terminal — Hands On 1](../assets/execucao-handson1.png)
 
-```
---- RESULTADOS ---
-
-Média: 5.9ºC
-Maior temperatura: 25.0ºC
-Índice do maior valor: 7
-Menor temperatura: 0.0ºC
-Índice do Menor valor: 8
-Quantidade de valores acima da média: 3
-
-Quantidade de operações de percurso: 40
-```
 
 ## Análise de complexidade
 

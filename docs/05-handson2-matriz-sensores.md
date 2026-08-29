@@ -78,34 +78,10 @@ public class handson2.HandsOn2 {
 }
 ```
 
-## Resultado de exemplo
+## Execução do programa
 
-Executado com limite de `40°C`:
+![Saída do terminal — Hands On 2](../assets/execucao-handson2.png)
 
-```
---- Média por Sensor ---
-
-Média do sensor 1: 27.957083
-Média do sensor 2: 26.275414
-Média do sensor 3: 29.548338
-Média do sensor 4: 26.5575
-Média do sensor 5: 26.894997
-
---- Maior Temperatura Geral ---
-
-Maior temperatura registrada: 56.3
-Sensor com a maior temperatura registrada: 5
-Horário da maior temperatura registrada: 22
-
---- Média de Temperatura Geral ---
-
-Média Geral: 27.406673
-
---- Leituras acima do limite ---
-
-Limite informado: 40.0°C
-Quantidade de leituras acima do limite: 34
-```
 
 ## Explicações
 

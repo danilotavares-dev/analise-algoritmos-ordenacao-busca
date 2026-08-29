@@ -84,9 +84,51 @@ public class busca.BuscaSequencial {
 
 Para cada tamanho de matriz (2×2, 10×10 e 100×100), foram testadas três situações: valor no início, valor no final e valor inexistente.
 
-- **Matriz 2×2:** busca por `2000` (início) → encontrado em `[0][0]`, 1 comparação. Busca por `1200` (final) → encontrado em `[1][1]`, 4 comparações. Busca por `-1` (inexistente) → não encontrado, 4 comparações.
-- **Matriz 10×10:** busca por `2000` (início) → encontrado em `[0][0]`, 1 comparação. Busca por `1200` (final) → encontrado em `[9][9]`, 100 comparações. Busca por `-4` (inexistente) → não encontrado, 100 comparações.
-- **Matriz 100×100:** busca por `2000` (início) → encontrado em `[0][0]`, 1 comparação. Busca por `1200` (final) → encontrado em `[99][99]`, 10.000 comparações. Busca por valor inexistente → não encontrado, 10.000 comparações.
+## Testes realizados
+
+Para cada tamanho de matriz (2×2, 10×10 e 100×100), foram testadas três situações: valor no início, valor no final e valor inexistente.
+
+### Matriz 2×2
+
+**Valor no início (`2000`):**
+
+![Busca 2x2 valor inicial](../assets/busca-2x2-inicio.png)
+
+**Valor no final (`1200`):**
+
+![Busca 2x2 valor final](../assets/busca-2x2-final.png)
+
+**Valor inexistente (`-1`):**
+
+![Busca 2x2 valor inexistente](../assets/busca-2x2-inexistente.png)
+
+### Matriz 10×10
+
+**Valor no início (`2000`):**
+
+![Busca 10x10 valor inicial](../assets/busca-10x10-inicio.png)
+
+**Valor no final (`1200`):**
+
+![Busca 10x10 valor final](../assets/busca-10x10-final.png)
+
+**Valor inexistente (`-1`):**
+
+![Busca 10x10 valor inexistente](../assets/busca-10x10-inexistente.png)
+
+### Matriz 100×100
+
+**Valor no início (`2000`):**
+
+![Busca 100x100 valor inicial](../assets/busca-100x100-inicio.png)
+
+**Valor no final (`1200`):**
+
+![Busca 100x100 valor final](../assets/busca-100x100-final.png)
+
+**Valor inexistente:**
+
+![Busca 100x100 valor inexistente](../assets/busca-100x100-inexistente.png)
 
 ## Tabela de registros
 

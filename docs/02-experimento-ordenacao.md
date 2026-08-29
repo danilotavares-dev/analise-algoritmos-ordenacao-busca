@@ -114,6 +114,10 @@ public class ordenacao.Main {
 
 > Ambos os algoritmos usam a mesma semente aleatória (`Random(51)`) e operam sobre cópias independentes (`Arrays.copyOf`) do mesmo array original, garantindo que a comparação seja justa.
 
+## Execução do programa
+
+![Saída do terminal — experimento de ordenação](../assets/execucao-ordenacao.png)
+
 ## Resultados obtidos
 
 | Tamanho do Array | Bubble Sort – Comparações | Bubble Sort – Trocas | Quick Sort – Comparações | Quick Sort – Movimentações |
