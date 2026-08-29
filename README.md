@@ -88,3 +88,9 @@ java -cp out handson2.HandsOn2
 Por isso, em todos os experimentos deste repositório, buscou-se relacionar:
 
 **Tamanho da entrada → Número de operações → Complexidade → Eficiência do algoritmo.**
+
+## Comparação visual — crescimento das operações
+
+![Bubble Sort vs Quick Sort — total de operações por tamanho de entrada](assets/grafico-comparativo-ordenacao.png)
+
+*Escala logarítmica em ambos os eixos. Dados reais do experimento da [Parte 2](docs/02-experimento-ordenacao.md): com 1.000 elementos, o Bubble Sort realiza quase 47 vezes mais operações que o Quick Sort para produzir exatamente o mesmo resultado.*
