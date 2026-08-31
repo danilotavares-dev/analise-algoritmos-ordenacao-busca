@@ -35,18 +35,6 @@ project-root/
         └── HandsOn2.java                       ← package handson2;
 ```
 
-## Sumário da entrega
-
-| Parte | Conteúdo | Peso |
-|---|---|---|
-| [Parte 1](docs/01-pesquisa-bubble-quick.md) | Pesquisa e comparação entre Bubble Sort e Quick Sort | 0,20 |
-| [Parte 2](docs/02-experimento-ordenacao.md) | Experimento de ordenação com arrays de 10, 20 e 1.000 elementos | 0,25 |
-| [Parte 3](docs/03-busca-matrizes.md) | Busca sequencial em matrizes 2×2, 10×10 e 100×100 | 0,20 |
-| [Parte 4](docs/04-handson1-array-temperaturas.md) | Hands On 1 — Investigação do array de temperaturas | 0,15 |
-| [Parte 5](docs/05-handson2-matriz-sensores.md) | Hands On 2 — Matriz aplicada a sensores | 0,15 |
-| [Parte 6](docs/06-analise-conclusao.md) | Análise crítica e conclusão geral | 0,05 |
-| **Total** | | **1,00** |
-
 ## Como obter o projeto
 
 Antes de executar qualquer código, você precisa ter os arquivos deste repositório na sua máquina. Existem duas formas de fazer isso — escolha a que for mais confortável.
