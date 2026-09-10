@@ -24,6 +24,42 @@ public class SortingUtils {
         }
     }
 
+    public static void selectionSort(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            int menor = i;
+            for (int j = i + 1; j < array.length; j++) {
+                comparacoes++;
+                if (array[j] < array[menor]) {
+                    menor = j;
+                }
+            }
+            if (menor != i) {
+                trocas++;
+                int temp = array[i];
+                array[i] = array[menor];
+                array[menor] = temp;
+            }
+        }
+    }
+
+    public static void insertionSort(int[] array) {
+        for (int i = 1; i < array.length; i++) {
+            int chave = array[i];
+            int j = i - 1;
+            while (j >= 0) {
+                comparacoes++;
+                if (array[j] > chave) {
+                    trocas++;
+                    array[j + 1] = array[j];
+                    j--;
+                } else {
+                    break;
+                }
+            }
+            array[j + 1] = chave;
+        }
+    }
+
     public static void quickSort(int[] array, int low, int high) {
         int inicio = low, fim = high;
         int pivot = array[(inicio + fim) / 2];

@@ -7,7 +7,7 @@
 
 ## Objetivo
 
-Investigar experimentalmente o comportamento de estruturas de dados e algoritmos fundamentais, relacionando **arrays, matrizes, ordenação, busca, índices, loops e complexidade computacional**. Além de desenvolver os códigos, a atividade exige **medir, comparar e interpretar** a quantidade de operações realizadas pelos algoritmos, evidenciando que resultados iguais podem esconder custos computacionais muito diferentes.
+Investigar experimentalmente o comportamento de estruturas de dados e algoritmos fundamentais, relacionando **arrays, matrizes, ordenação, busca, índices, loops e complexidade computacional**. Além de desenvolver os códigos, a atividade exige **medir, comparar e interpretar** a quantidade de operações realizadas pelos algoritmos — Bubble Sort, Selection Sort, Insertion Sort e Quick Sort —, evidenciando que resultados iguais podem esconder custos computacionais muito diferentes.
 
 ## Estrutura do repositório
 
@@ -16,7 +16,7 @@ project-root/
 ├── README.md                                  ← este arquivo
 ├── docs/
 │   ├── 01-pesquisa-bubble-quick.md             ← Parte 1: pesquisa e comparação teórica
-│   ├── 02-experimento-ordenacao.md             ← Parte 2: experimento Bubble vs Quick Sort
+│   ├── 02-experimento-ordenacao.md             ← Parte 2: experimento com os quatro algoritmos de ordenação
 │   ├── 03-busca-matrizes.md                    ← Parte 3: busca sequencial em matrizes
 │   ├── 04-handson1-array-temperaturas.md       ← Parte 4: Hands On 1 (array de temperaturas)
 │   ├── 05-handson2-matriz-sensores.md          ← Parte 5: Hands On 2 (matriz de sensores)
@@ -37,8 +37,8 @@ project-root/
 
 | Parte | Conteúdo | Peso |
 |---|---|---|
-| [Parte 1](docs/01-pesquisa-bubble-quick.md) | Pesquisa e comparação entre Bubble Sort e Quick Sort | 0,20 |
-| [Parte 2](docs/02-experimento-ordenacao.md) | Experimento de ordenação com arrays de 10, 20 e 1.000 elementos | 0,25 |
+| [Parte 1](docs/01-pesquisa-algoritmos-ordenacao.md) | Pesquisa e comparação entre Bubble Sort, Selection Sort, Insertion Sort e Quick Sort | 0,20 |
+| [Parte 2](docs/02-experimento-ordenacao.md) | Experimento de ordenação com arrays de 10, 20 e 1.000 elementos, comparando Bubble Sort, Selection Sort, Insertion Sort e Quick Sort | 0,25 |
 | [Parte 3](docs/03-busca-matrizes.md) | Busca sequencial em matrizes 2×2, 10×10 e 100×100 | 0,20 |
 | [Parte 4](docs/04-handson1-array-temperaturas.md) | Hands On 1 — Investigação do array de temperaturas | 0,15 |
 | [Parte 5](docs/05-handson2-matriz-sensores.md) | Hands On 2 — Matriz aplicada a sensores | 0,15 |
@@ -132,7 +132,7 @@ Se preferir usar o terminal, os comandos abaixo funcionam **sem alterações** e
 
 Antes de rodar qualquer comando, abra o terminal **na pasta raiz do projeto** (a pasta que contém a pasta `src`).
 
-#### Parte 2 — Ordenação (Bubble Sort e Quick Sort)
+#### Parte 2 — Ordenação (Bubble Sort, Selection Sort, Insertion Sort e Quick Sort)
 
 ```bash
 javac -d out src/ordenacao/SortingUtils.java src/ordenacao/Main.java
@@ -182,6 +182,6 @@ Por isso, em todos os experimentos deste repositório, buscou-se relacionar:
 
 ## Comparação visual — crescimento das operações
 
-![Bubble Sort vs Quick Sort — total de operações por tamanho de entrada](assets/grafico-comparativo-ordenacao.png)
+![Bubble Sort vs Selection Sort vs Insertion Sort vs Quick Sort — total de operações por tamanho de entrada](assets/grafico-comparativo-ordenacao.png)
 
-*Escala logarítmica em ambos os eixos. Dados reais do experimento da [Parte 2](docs/02-experimento-ordenacao.md): com 1.000 elementos, o Bubble Sort realiza quase 47 vezes mais operações que o Quick Sort para produzir exatamente o mesmo resultado.*
+*Escala logarítmica em ambos os eixos. Dados reais do experimento da [Parte 2](docs/02-experimento-ordenacao.md): com 1.000 elementos, o Bubble Sort realiza cerca de 47 vezes mais operações que o Quick Sort para produzir exatamente o mesmo resultado. Selection Sort e Insertion Sort, embora também sejam O(n²) e fiquem próximos do Bubble Sort em volume total de operações nesse tamanho de entrada, distribuem o custo de forma bem diferente: o Selection Sort concentra o trabalho em comparações e faz poucas trocas, enquanto o Insertion Sort faz menos comparações mas quase tantas trocas quanto o Bubble Sort.*
