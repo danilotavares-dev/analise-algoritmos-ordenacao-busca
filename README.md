@@ -17,7 +17,7 @@ Investigar experimentalmente o comportamento de estruturas de dados e algoritmos
 project-root/
 ├── README.md                                  ← este arquivo
 ├── docs/
-│   ├── 01-pesquisa-bubble-quick.md             ← Parte 1: pesquisa e comparação teórica
+│   ├── 01-pesquisa-algoritmos-ordenacao.md             ← Parte 1: pesquisa e comparação teórica
 │   ├── 02-experimento-ordenacao.md             ← Parte 2: experimento com os quatro algoritmos de ordenação
 │   ├── 03-busca-matrizes.md                    ← Parte 3: busca sequencial em matrizes
 │   ├── 04-handson1-array-temperaturas.md       ← Parte 4: Hands On 1 (array de temperaturas)
